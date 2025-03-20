@@ -1,0 +1,18 @@
+import { useState } from "react";
+import { UserContext } from "./UserContext";
+
+const DUMMY_USER = {
+  id: 123,
+  name: "Fernando Herrera",
+  email: "fernando@google.com",
+};
+
+export const UserProvider = ({ children }) => {
+  const [user, setUser] = useState(DUMMY_USER);
+
+  return (
+    <UserContext.Provider value={{ hola: "Mundo", user, setUser }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
