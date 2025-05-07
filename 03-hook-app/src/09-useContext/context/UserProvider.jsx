@@ -7,6 +7,7 @@ const DUMMY_USER = {
   email: "fernando@google.com",
 };
 
+// eslint-disable-next-line react/prop-types
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(DUMMY_USER);
 

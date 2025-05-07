@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { pokemonApi } from "../../api/poKemonApi";
 
 export const getPokemon = (page = 0) => {
-  return async (dispatch) => {
+  return async () => {
     //dispatch(startLoadingPokemons());
 
     // const resp = await fetch(

@@ -1,7 +1,6 @@
-import React from "react";
 import { HomePage } from "./HomePage";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { LoginPage } from "./Loginpage";
+import { LoginPage } from "./LoginPage";
 import { AboutPage } from "./AboutPage";
 import { Navbar } from "./Navbar";
 import { UserProvider } from "./context/UserProvider";
